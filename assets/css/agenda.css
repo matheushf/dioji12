@@ -1,0 +1,15 @@
+body {
+  margin: 0; }
+
+.wrapper-body {
+  background: #ff9520;
+  color: white;
+  margin: 0;
+  padding: 10px; }
+  .wrapper-body hr {
+    width: 95%;
+    border: 1px solid rgba(0, 0, 0, 0.44); }
+  .wrapper-body small {
+    margin-left: 10px; }
+
+/*# sourceMappingURL=agenda.css.map */
