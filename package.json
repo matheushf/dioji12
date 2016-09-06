@@ -1,0 +1,32 @@
+{
+  "name": "dioji12",
+  "version": "1.0.0",
+  "description": "Apresentação da campanha do sr Dioji Ikeda",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "postcss",
+    "gulp",
+    "sass",
+    "js"
+  ],
+  "author": "matheushf",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "autoprefixer-core": "^6.0.1",
+    "csswring": "^5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-refresh": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.8",
+    "jshint": "^2.9.2",
+    "postcss": "^5.0.21"
+  }
+}

@@ -1,0 +1,30 @@
+@import 'compass';
+
+$verdeBase: #34834a;
+$laranjaBase: #ff7a22;
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.intro-header {
+  padding-top: -10px;
+  padding-bottom: 500px;
+  text-align: center;
+  color: white;
+  background: url(/assets/img/dioji_baby.jpg) no-repeat center center;
+  background-size: cover;
+}
