@@ -11,21 +11,23 @@ $app->post('/v1/agenda/salvar', function () use ($app, $Agenda) {
     echo json_encode($retorno);
 });
 
+//Apenas mostrar na tela o html
 $app->get('/v1/agenda/obter', function () use ($app) {
     $Resultado = $app->campanha->obterAgenda();
 
     echo $Resultado;
 });
 
-$app->post('/v1/propostas/salvar', function () use ($app) {
+$app->post('/v1/proposta/salvar', function () use ($app) {
     $retorno['url'] = '/v1/propostas/salvar';
     echo json_encode($retorno);
 });
 
-$app->post('/v1/propostas/obter', function () use ($app) {
+// Apenas mostrar na tela o html
+$app->get('/v1/proposta/obter', function () use ($app) {
     $Resultado = $app->campanha->obterPropostas();
 
-    echo json_encode($Resultado);
+    echo $Resultado;
 });
 
 $app->post('/v1/sugestao/salvar', function () use ($app) {

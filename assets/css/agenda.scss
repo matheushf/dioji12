@@ -1,17 +1,25 @@
+@import 'compass';
+
+$laranjaInicio: #ffda63;
+$laranjaFim: #ef4338;
+
 body {
-  margin: 0;
+  background: $laranjaInicio; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($laranjaInicio, $laranjaFim); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($laranjaInicio, $laranjaFim); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($laranjaInicio, $laranjaFim); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($laranjaInicio, $laranjaFim); /* Standard syntax */
 
 }
 
 .wrapper-body {
-  background: #ff9520;
   color: white;
   margin: 0;
   padding: 10px;
 
   hr {
-    width: 95%;
-    border: 1px solid rgba(0, 0, 0, 0.44);
+    width: 99%;
+    border: 1px solid darken($laranjaFim, 20%);
   }
 
   small {

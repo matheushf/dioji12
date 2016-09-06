@@ -14,6 +14,10 @@ class PCampanha
 
     function obterPropostas()
     {
+        global $db;
+
+        $sql = " SELECT * FROM proposta ";
+        return $db->GetObjectList($sql);
 
     }
 }
@@ -24,8 +28,10 @@ class Campanha extends PCampanha
     function obterAgenda()
     {
         $agendas = parent::obterAgenda();
+
         $html = "<link rel='stylesheet' href='/assets/css/agenda.css'>";
         $html .= "<div class='wrapper-body'>";
+
         foreach ($agendas as $agenda) {
             $html .= " 
                <p> {$agenda->agen_descricao} </p>
@@ -33,6 +39,7 @@ class Campanha extends PCampanha
                <hr>
              ";
         }
+
         $html .= "</div>";
 
         return $html;
@@ -40,16 +47,23 @@ class Campanha extends PCampanha
 
     function obterPropostas()
     {
-        $Retorno['retorno'] = 'propostas.obter';
+        $propostas = parent::obterPropostas();
 
-        $html = "
-        <ul>
-            <li>Placeholder</li>
-        </ul>
+        $html = "<link rel='stylesheet' href='/assets/css/agenda.css'>";
+        $html .= "<div class='wrapper-body'>";
+
+        foreach ($propostas as $proposta) {
+            $html .= "
+                   <h3> {$proposta->prop_area} </h3>
+                   <p> {$proposta->prop_descricao} </p>
+                   <small>(" . GeleiaUtil::DataComEspacos($proposta->prop_data) . ")</small>
+                   <hr>
         ";
+        }
 
-        $Retorno['conteudo']['html'] = $html;
+        $html .= " </div> ";
 
-        return $Retorno;
+        return $html;
     }
+    
 }
