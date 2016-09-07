@@ -1,34 +1,36 @@
-/**
- * 
- */
+$(function () {
 
-$(document).ready(function() {
-	$("#erroCns").hide();
+    var $item = $('.carousel .item');
+    var $wHeight = $(window).height();
 
-	$("form").submit(function(e) {
-		e.preventDefault(e);
+    $('.carousel').carousel({
+        interval: 6000,
+        pause: "false"
+    });
 
-		validar();
+    $item.eq(0).addClass('active');
+    $item.height($wHeight);
+    $item.addClass('full-screen');
 
-	});
-})
+    $('.carousel-inner img').each(function () {
+        var $src = $(this).attr('src');
+        var $color = $(this).attr('data-color');
 
+        $(this).parent().css({
+            'background-image' : 'url(' + $src + ')',
+            'background-color' : $color
+        });
 
-function Onlynumbers(e) {
-	var tecla = new Number();
-	if (window.event) {
-		tecla = e.keyCode;
-	} else if (e.which) {
-		tecla = e.which;
-	} else {
-		return true;
-	}
-	// if ((tecla >= "97") && (tecla <= "122")) {
-	if ((tecla < "48") || (tecla > "57")) {
-		if (tecla != "13") {
-			return false;
-		} else {
-			return true;
-		}
-	}
-}
+        // console.log($src);
+        $(this).remove();
+    });
+
+    $('.carousel-inner .carousel-caption').each(function () {
+        $(this).addClass('animated fadeInLeft')
+    });
+
+    $(window).on('resize', function () {
+        $wHeight = $(window).height();
+        $item.height($wHeight);
+    });
+});
