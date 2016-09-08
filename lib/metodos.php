@@ -1,7 +1,7 @@
 <?php
 
-//$url_base = "http://dioji12.com/api/v1/";
-$url_base = "http://dioji12/api/v1/";
+$url_base = "http://dioji12.com/api/v1/";
+//$url_base = "http://dioji12/api/v1/";
 
 // Fazer uma requisição à API
 function conectarCurl(array $header = null, $url = null, $postField = null)

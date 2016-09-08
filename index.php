@@ -8,6 +8,7 @@ $sugestao_area = conectarCurl(null, 'sugestao/area/obter');
         }
     </script>
 
+
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
 
@@ -42,9 +43,10 @@ $sugestao_area = conectarCurl(null, 'sugestao/area/obter');
                 <div class="form-group">
                     <input type="text" class="form-control" name="suge_nome" placeholder="Seu nome.."/>
                 </div>
+                
                 <div class="form-group">
-
-                    <input type="text" class="form-control" name="suge_celular" placeholder="(62) 0000-0000.."/>
+                    <input type="text" class="form-control mask-telefone" name="suge_celular"
+                           placeholder="(62) 0000-0000.."/>
                 </div>
 
                 <div class="form-group">

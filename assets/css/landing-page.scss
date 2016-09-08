@@ -78,7 +78,7 @@ h6 {
     }
 
     &.left, &.right {
-      transition: 1s ease-in-out;
+      transition: 0.5s ease-in-out;
     }
 
     &.left:hover {
@@ -86,12 +86,12 @@ h6 {
     }
 
     &.right:hover {
-      transform: translate(-10%, -10%);
+      transform: translate(-20%, -10%);
     }
 
     &.left:hover, &.right:hover {
       background-color: rgba(255, 122, 34, 0.56);
-      transition: 1s ease-in-out;
+      transition: 0.5s ease-in-out;
     }
 
   }
@@ -160,6 +160,11 @@ h6 {
   }
 }
 
+.bg-custom {
+  background: #44ab5b;
+  padding: 25px;
+}
+
 .sugestao-intro {
   margin-top: 20px;
 
@@ -192,11 +197,10 @@ h6 {
 
 }
 
-.propostas {
+.propostas, .agenda {
   font-family: 'Roboto', sans-serif;
 
   ul {
-    //list-style: none;
 
     li {
       color: #4e4e4e;
@@ -208,18 +212,21 @@ h6 {
   h2 {
     margin-top: 20px;
     margin-bottom: 20px;
+    color: white;
   }
 
   h3 {
     margin-top: 30px;
     margin-bottom: 30px;
+    color: white;
   }
 }
 
 .footer {
   color: white;
   margin-top: 40px;
-  background-color: rgba(232, 232, 232, 0.49);
+  background-color: rgba(232, 232, 232, 0.2);
+  //background: #44ab5b;
   height: 30px;
   padding-top: 5px;
   bottom: 0;

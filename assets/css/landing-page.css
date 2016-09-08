@@ -73,7 +73,7 @@ h6 {
 }
 /* line 80, landing-page.scss */
 #mycarousel .carousel-control.left, #mycarousel .carousel-control.right {
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 /* line 84, landing-page.scss */
 #mycarousel .carousel-control.left:hover {
@@ -81,12 +81,12 @@ h6 {
 }
 /* line 88, landing-page.scss */
 #mycarousel .carousel-control.right:hover {
-  transform: translate(-10%, -10%);
+  transform: translate(-20%, -10%);
 }
 /* line 92, landing-page.scss */
 #mycarousel .carousel-control.left:hover, #mycarousel .carousel-control.right:hover {
   background-color: rgba(255, 122, 34, 0.56);
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 /* line 99, landing-page.scss */
 #mycarousel .full-screen {
@@ -148,21 +148,27 @@ h6 {
 }
 
 /* line 163, landing-page.scss */
+.bg-custom {
+  background: #44ab5b;
+  padding: 25px;
+}
+
+/* line 168, landing-page.scss */
 .sugestao-intro {
   margin-top: 20px;
 }
-/* line 166, landing-page.scss */
+/* line 171, landing-page.scss */
 .sugestao-intro .sugestao-quantidade {
   margin-top: 20px;
   color: #ff6b09;
 }
-/* line 171, landing-page.scss */
+/* line 176, landing-page.scss */
 .sugestao-intro .sugestao-titulo {
   margin-top: 40px;
   margin-bottom: 40px;
   color: white;
 }
-/* line 177, landing-page.scss */
+/* line 182, landing-page.scss */
 .sugestao-intro .btn-enviar {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -172,43 +178,45 @@ h6 {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 186, landing-page.scss */
+/* line 191, landing-page.scss */
 .sugestao-intro .btn-enviar:hover {
   background-color: #ff6b09;
   border: 2px solid #42a85f;
   color: #e6e6e6;
 }
 
-/* line 195, landing-page.scss */
-.propostas {
+/* line 200, landing-page.scss */
+.propostas, .agenda {
   font-family: 'Roboto', sans-serif;
 }
-/* line 201, landing-page.scss */
-.propostas ul li {
+/* line 205, landing-page.scss */
+.propostas ul li, .agenda ul li {
   color: #4e4e4e;
   margin-top: 10px;
 }
-/* line 208, landing-page.scss */
-.propostas h2 {
+/* line 212, landing-page.scss */
+.propostas h2, .agenda h2 {
   margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
 }
-/* line 213, landing-page.scss */
-.propostas h3 {
+/* line 218, landing-page.scss */
+.propostas h3, .agenda h3 {
   margin-top: 30px;
   margin-bottom: 30px;
+  color: white;
 }
 
-/* line 219, landing-page.scss */
+/* line 225, landing-page.scss */
 .footer {
   color: white;
   margin-top: 40px;
-  background-color: rgba(232, 232, 232, 0.49);
+  background-color: rgba(232, 232, 232, 0.2);
   height: 30px;
   padding-top: 5px;
   bottom: 0;
 }
-/* line 227, landing-page.scss */
+/* line 234, landing-page.scss */
 .footer p {
   margin: 0;
   position: absolute;

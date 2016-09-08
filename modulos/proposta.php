@@ -5,9 +5,9 @@ include '../head.php';
     <script>
         function declararArea() {
             area = document.getElementsByClassName('proposta-item');
-//            console.log(area);
         }
     </script>
+
 
     <div class="col-sm-2"></div>
     <div class="col-sm-8">

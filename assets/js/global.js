@@ -1,10 +1,12 @@
 $(function () {
 
+    $(".mask-telefone").mask("(99) ?9?9999-9999");
+
     var $item = $('.carousel .item');
     var $wHeight = $(window).height();
 
     $('.carousel').carousel({
-        interval: 6000,
+        interval: 8000,
         pause: "false"
     });
 
@@ -26,7 +28,7 @@ $(function () {
     });
 
     $('.carousel-inner .carousel-caption').each(function () {
-        $(this).addClass('animated fadeInLeft')
+        $(this).addClass('animated fadeInLeft hidden')
     });
 
     $(window).on('resize', function () {
@@ -57,9 +59,9 @@ $(function () {
             var data_item = $(area[index]).attr('data-item');
             item = (data_item) ? $('[data-item="' + data_item + '"]') : area;
 
-            var visivel = isScrolledIntoView(item[0]);
+            var visible = isScrolledIntoView(item[0]);
 
-            if (visivel)
+            if (visible)
                 $(area[index]).addClass('animated fadeInLeft');
         });
     });
