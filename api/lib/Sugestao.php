@@ -30,11 +30,11 @@ class PSugestao
         return $db->GetObjectList($sql);
     }
 
-    function quantidade()
+    function obterQuantidade()
     {
         global $db;
 
-        $sql = " SELECT COUNT(suge_id) FROM sugestao ";
+        $sql = " SELECT suge_id FROM sugestao ORDER BY suge_id DESC LIMIT 1 ";
         return $db->GetObject($sql);
     }
 
@@ -75,7 +75,7 @@ class Sugestao extends PSugestao
     function quantidade()
     {
         $Retorno['retorno'] = 'sugestao.quantidade';
-        $Retorno['conteudo'] = count(parent::obter());
+        $Retorno['conteudo'] = parent::obterQuantidade();
 
         return $Retorno;
     }

@@ -94,7 +94,6 @@ h6 {
       transition: 1s ease-in-out;
     }
 
-
   }
 
   .full-screen {
@@ -149,7 +148,7 @@ h6 {
       }
     }
 
-    &.active > a {
+    &.active > a, &.active > a:focus {
       background-color: $laranjaBase;
       border-color: darken($laranjaBase, 20%);
 
@@ -193,12 +192,36 @@ h6 {
 
 }
 
+.propostas {
+  font-family: 'Roboto', sans-serif;
+
+  ul {
+    //list-style: none;
+
+    li {
+      color: #4e4e4e;
+      margin-top: 10px;
+    }
+
+  }
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .footer {
   color: white;
   margin-top: 40px;
   background-color: rgba(232, 232, 232, 0.49);
   height: 30px;
-  padding: 10px;
+  padding-top: 5px;
   bottom: 0;
 
   p {

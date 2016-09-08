@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once 'lib/metodos.php';
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -6,10 +11,11 @@
     <meta name="viewport" content="width=device-width">
     <title>Dioji 12</title>
 
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="assets/css/animate.css">-->
-    <link rel="stylesheet" href="assets/css/landing-page.css">
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/landing-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 
@@ -91,16 +97,21 @@
 
 <div class="wrapper-navigation">
     <ul class="nav nav-tabs">
-        <li class="active">
-            <a href="/modulos/sugestoes.html"><i class="fa fa-wechat"></i>Sugestões</a>
+        <li>
+            <a href="/index.php"><i class="fa fa-wechat"></i>Sugestões</a>
         </li>
 
         <li>
-            <a href="/modulos/agenda.html"><i class="fa fa-list"></i>Agenda</a>
+            <a href="/modulos/agenda.php"><i class="fa fa-list"></i>Agenda</a>
         </li>
 
         <li>
-            <a href="/modulos/proposta.html"><i class="fa fa-pencil"></i>Propostas</a>
+            <a href="/modulos/proposta.php"><i class="fa fa-pencil"></i>Propostas</a>
         </li>
     </ul>
 </div>
+
+
+<div class="container">
+    <div class="row">
+        
