@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     path = require('path'),
+    runSequence = require('run-sequence'),
     postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),
     csswring = require('csswring'),
@@ -31,8 +32,7 @@ gulp.task('styles', function () {
             sass: 'assets/css'
         }))
         .pipe(postcss(processors))
-        .pipe(gulp.dest('assets/css/'))
-        .pipe(refresh());
+        .pipe(gulp.dest('assets/css/'));
 });
 
 gulp.task('jshint', function () {
@@ -55,5 +55,7 @@ gulp.task('watch', function () {
     refresh.listen();
     refresh.options.quiet = true;
 
-    gulp.watch(srcPaths, ['styles', 'reload']);
+    gulp.watch(srcPaths, function () {
+        runSequence('styles', ['reload']);
+    });
 });

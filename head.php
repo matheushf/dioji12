@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<link rel="stylesheet" href="assets/css/animate.css">-->
     <link rel="stylesheet" href="assets/css/landing-page.css">
 
 </head>
@@ -18,9 +18,9 @@
 
 <div id="mycarousel" class="carousel slide" data-ride="carousel">
 
-    <div class="header-carousel animated fadeInLeft">
-        <img src="/assets/imagens/logo.png">
-    </div>
+    <!--<div class="header-carousel animated fadeInLeft">
+        <img src="/assets/imagens/logo.png" class="img-responsive">
+    </div>-->
 
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -77,29 +77,30 @@
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+    <a class="carousel-control left" href="#mycarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="prev"></span>
         <span class="sr-only">Previous</span>
     </a>
 
-    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+    <a class="carousel-control right" href="#mycarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
 
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <br>
+<div class="wrapper-navigation">
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="/modulos/sugestoes.html"><i class="fa fa-wechat"></i>Sugestões</a>
+        </li>
 
-    </div>
+        <li>
+            <a href="/modulos/agenda.html"><i class="fa fa-list"></i>Agenda</a>
+        </li>
+
+        <li>
+            <a href="/modulos/proposta.html"><i class="fa fa-pencil"></i>Propostas</a>
+        </li>
+    </ul>
 </div>
-
-
-<script type="application/javascript" src="assets/js/vendor/jquery-1.11.3.min.js"></script>
-<script type="application/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
-<script type="application/javascript" src="assets/js/index.js"></script>
-
-</body>
-</html>
