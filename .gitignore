@@ -3,6 +3,6 @@
 lib/vendor/
 /.idea/
 /node_modules
-/admin
-/api
-/lib
+#/admin
+#/api
+#/lib
