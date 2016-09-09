@@ -1,6 +1,5 @@
 <?php
 include 'head.php';
-$sugestao_area = conectarCurl(null, 'sugestao/area/obter');
 ?>
     <script>
         function declararArea() {
@@ -13,24 +12,14 @@ $sugestao_area = conectarCurl(null, 'sugestao/area/obter');
 
         <div class="sugestao-intro text-center">
 
-            <?= mensagem() ?>
-
-            <!-- <h2 class="sugestao-quantidade">
-            <b><? /*= conectarCurl(null, 'sugestao/quantidade')->conteudo->suge_id */ ?></b>
-            Sugestões
-        </h2>-->
-
             <h3 class="sugestao-titulo"> ENVIE SUA SUGESTÃO PARA DIOJI12 </h3>
 
-            <form action="acoes.php?acao=salvar_sugestao" method="post" enctype="multipart/form-data">
+            <form action="acoes.php?acao=salvar_sugestao" method="post" enctype="multipart/form-data" id="form">
 
                 <div class="form-group">
 
                     <select class="form-control" name="suge_area_id">
                         <option value="">Selecione uma área...</option>
-                        <?php foreach ($sugestao_area->conteudo as $area) { ?>
-                            <option value="<?= $area->suar_id ?>"><?= $area->suar_descricao ?></option>
-                        <?php } ?>
                     </select>
                 </div>
 

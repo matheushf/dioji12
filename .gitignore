@@ -3,6 +3,7 @@
 lib/vendor/
 /.idea/
 /node_modules
-#/admin
-#/api
-#/lib
+/bower_components
+/admin
+/api
+/lib

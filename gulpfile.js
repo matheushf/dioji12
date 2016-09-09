@@ -29,7 +29,7 @@ gulp.task('styles', function () {
         .pipe(compass({
             config_file: './config.rb',
             css: 'assets/css',
-            sass: 'assets/css'
+            sass: 'assets/sass'
         }))
         .pipe(postcss(processors))
         .pipe(gulp.dest('assets/css/'));

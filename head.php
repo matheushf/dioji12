@@ -1,8 +1,3 @@
-<?php
-session_start();
-require_once 'lib/metodos.php';
-?>
-
 <!DOCTYPE html>
 
 <html lang="en">

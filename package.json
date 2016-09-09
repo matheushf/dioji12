@@ -1,7 +1,7 @@
 {
   "name": "dioji12",
   "version": "1.0.0",
-  "description": "Apresentação da campanha do sr Dioji Ikeda",
+  "description": "temp repo for an campaign profile",
   "main": "index.html",
   "scripts": {
     "test": "npm test"
