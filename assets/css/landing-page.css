@@ -22,12 +22,12 @@ h6 {
   font-weight: 700;
 }
 
-/* line 29, landing-page.scss */
+/* line 30, landing-page.scss */
 #mycarousel .header-carousel {
   z-index: 999;
   position: relative;
 }
-/* line 33, landing-page.scss */
+/* line 34, landing-page.scss */
 #mycarousel .header-carousel img {
   margin: 0;
   position: absolute;
@@ -39,23 +39,24 @@ h6 {
   width: 350px;
   height: auto;
 }
-/* line 46, landing-page.scss */
+/* line 47, landing-page.scss */
 #mycarousel .carousel-caption {
-  background-color: rgba(255, 122, 34, 0.4);
+  background-color: rgba(255, 122, 34, 0.6);
+  padding: 10px;
 }
-/* line 50, landing-page.scss */
+/* line 52, landing-page.scss */
 #mycarousel .carousel-caption h3 {
   display: inline-block;
   padding: 10px;
   background: #B9121B;
 }
-/* line 58, landing-page.scss */
+/* line 60, landing-page.scss */
 #mycarousel .carousel-caption .p {
   text-align: center;
   padding-top: 40px;
   font-size: 13px;
 }
-/* line 65, landing-page.scss */
+/* line 67, landing-page.scss */
 #mycarousel .carousel-control {
   z-index: 9999;
   background: transparent;
@@ -63,67 +64,74 @@ h6 {
   width: 10%;
   top: 40%;
 }
-/* line 72, landing-page.scss */
+/* line 74, landing-page.scss */
 #mycarousel .carousel-control.right {
   transform: translate(0, -10%);
 }
-/* line 76, landing-page.scss */
+/* line 78, landing-page.scss */
 #mycarousel .carousel-control.left {
   transform: translate(-10%);
 }
-/* line 80, landing-page.scss */
+/* line 82, landing-page.scss */
 #mycarousel .carousel-control.left, #mycarousel .carousel-control.right {
   transition: 0.5s ease-in-out;
 }
-/* line 84, landing-page.scss */
+/* line 86, landing-page.scss */
 #mycarousel .carousel-control.left:hover {
   transform: translate(10%, 0);
 }
-/* line 88, landing-page.scss */
+/* line 90, landing-page.scss */
 #mycarousel .carousel-control.right:hover {
   transform: translate(-20%, -10%);
 }
-/* line 92, landing-page.scss */
+/* line 94, landing-page.scss */
 #mycarousel .carousel-control.left:hover, #mycarousel .carousel-control.right:hover {
   background-color: rgba(255, 122, 34, 0.56);
   transition: 0.5s ease-in-out;
 }
-/* line 99, landing-page.scss */
+/* line 101, landing-page.scss */
 #mycarousel .full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 768px) {
+  /* line 108, landing-page.scss */
+  #mycarousel .carousel-control .glyphicon-chevron-left, #mycarousel .carousel-control .glyphicon-chevron-right {
+    top: 30%;
+  }
+}
 
-/* line 106, landing-page.scss */
+/* line 115, landing-page.scss */
 .wrapper-navigation {
   margin-top: 35px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid #34834a;
+  border-bottom: 1px solid #34834a;
+  background-color: rgba(43, 128, 45, 0.24);
 }
-/* line 113, landing-page.scss */
+/* line 125, landing-page.scss */
 .wrapper-navigation ul {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(43, 128, 45, 0.24);
-  border-top: 1px solid #34834a;
-  border-bottom: 1px solid #34834a;
+  border: 0;
   padding: 5px;
 }
-/* line 130, landing-page.scss */
+/* line 135, landing-page.scss */
 .wrapper-navigation li {
   margin: 0;
 }
-/* line 133, landing-page.scss */
+/* line 138, landing-page.scss */
 .wrapper-navigation li i {
   margin-right: 10px;
   color: white;
 }
-/* line 138, landing-page.scss */
+/* line 143, landing-page.scss */
 .wrapper-navigation li a {
   background-color: #ffa86f;
   padding-right: 40px;
@@ -131,44 +139,60 @@ h6 {
   border-radius: 0;
   color: white;
 }
-/* line 145, landing-page.scss */
+/* line 150, landing-page.scss */
 .wrapper-navigation li a:hover {
   background-color: #ff893c;
   border-color: #ff7a22;
 }
-/* line 151, landing-page.scss */
+/* line 156, landing-page.scss */
 .wrapper-navigation li.active > a, .wrapper-navigation li.active > a:focus {
   background-color: #ff7a22;
   border-color: #bb4a00;
 }
-/* line 155, landing-page.scss */
+/* line 160, landing-page.scss */
 .wrapper-navigation li.active > a:hover, .wrapper-navigation li.active > a:focus:hover {
   background-color: #ff6b09;
   border-color: #883600;
 }
+@media only screen and (max-width: 768px) {
+  /* line 168, landing-page.scss */
+  .wrapper-navigation ul {
+    width: 80%;
+  }
+  /* line 173, landing-page.scss */
+  .wrapper-navigation li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+  }
+  /* line 179, landing-page.scss */
+  .wrapper-navigation li i {
+    margin: 10px;
+  }
+}
 
-/* line 163, landing-page.scss */
+/* line 188, landing-page.scss */
 .bg-custom {
   background: #44ab5b;
   padding: 25px;
 }
 
-/* line 168, landing-page.scss */
+/* line 193, landing-page.scss */
 .sugestao-intro {
   margin-top: 20px;
 }
-/* line 171, landing-page.scss */
+/* line 196, landing-page.scss */
 .sugestao-intro .sugestao-quantidade {
   margin-top: 20px;
   color: #ff6b09;
 }
-/* line 176, landing-page.scss */
+/* line 201, landing-page.scss */
 .sugestao-intro .sugestao-titulo {
   margin-top: 40px;
   margin-bottom: 40px;
   color: white;
 }
-/* line 182, landing-page.scss */
+/* line 207, landing-page.scss */
 .sugestao-intro .btn-enviar {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -178,36 +202,36 @@ h6 {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 191, landing-page.scss */
+/* line 216, landing-page.scss */
 .sugestao-intro .btn-enviar:hover {
   background-color: #ff6b09;
   border: 2px solid #42a85f;
   color: #e6e6e6;
 }
 
-/* line 200, landing-page.scss */
+/* line 225, landing-page.scss */
 .propostas, .agenda {
   font-family: 'Roboto', sans-serif;
 }
-/* line 205, landing-page.scss */
+/* line 230, landing-page.scss */
 .propostas ul li, .agenda ul li {
   color: #4e4e4e;
   margin-top: 10px;
 }
-/* line 212, landing-page.scss */
+/* line 237, landing-page.scss */
 .propostas h2, .agenda h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: white;
 }
-/* line 218, landing-page.scss */
+/* line 243, landing-page.scss */
 .propostas h3, .agenda h3 {
   margin-top: 30px;
   margin-bottom: 30px;
   color: white;
 }
 
-/* line 225, landing-page.scss */
+/* line 250, landing-page.scss */
 .footer {
   color: white;
   margin-top: 40px;
@@ -216,7 +240,7 @@ h6 {
   padding-top: 5px;
   bottom: 0;
 }
-/* line 234, landing-page.scss */
+/* line 259, landing-page.scss */
 .footer p {
   margin: 0;
   position: absolute;

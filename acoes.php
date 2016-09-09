@@ -12,12 +12,7 @@ switch ($acao) {
 
         $res = conectarCurl(null, 'sugestao/salvar', $dados);
 
-        if ($res)
-            $_SESSION['textoMensagem']['sucesso'] = 'Sua sugestão foi enviada com sucesso.';
-        else
-            $_SESSION['textoMensagem']['error'] = 'Ocorreu um erro ao enviar a sugestão, tente novamente mais tarde.';
-
-        header('Location: index.php');
+        echo json_encode($res);
 
         break;
 }

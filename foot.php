@@ -3,11 +3,11 @@
 </div>
 
 <div class="footer">
-    <div class="col-sm-2 text-left">
+    <div class="col-sm-2 col-xs-6 text-left">
         <small>Desenvolvido por ASIX6</small>
     </div>
-    <div class="col-sm-8"></div>
-    <div class="col-sm-2 text-right">
+    <div class="col-sm-8 col-xs-0"></div>
+    <div class="col-sm-2 col-xs-6 text-right">
         <small>© 2014-2016</small>
     </div>
 </div>

@@ -11,7 +11,7 @@ $(function () {
     });
 
     $item.eq(0).addClass('active');
-    $item.height($wHeight);
+    $item.height($wHeight - 200);
     $item.addClass('full-screen');
 
     $('.carousel-inner img').each(function () {
@@ -65,6 +65,32 @@ $(function () {
                 $(area[index]).addClass('animated fadeInLeft');
         });
     });
+
+    $(".btn-enviar").click(function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            type: 'POST',
+            url: 'acoes.php?acao=salvar_sugestao',
+            data: {
+                suge_area_id: $("[name='suge_area_id']").val(),
+                suge_descricao: $("[name='suge_descricao']").val(),
+                suge_nome: $("[name='suge_nome']").val(),
+                suge_celular: $("[name='suge_celular']").val()
+            },
+            success: function (data) {
+                data = JSON.parse(data);
+
+                if (data.conteudo == 'sucesso')
+                    $("#resposta").html('Sua sugestão foi enviada com sucesso.');
+                else
+                    $("#resposta").html('Ocorreu um erro, tente novamente mais tarde.');
+
+                $("#modal_respota").modal();
+            }
+        })
+    });
+
 });
 
 function isScrolledIntoView(el) {

@@ -26,6 +26,7 @@ h6 {
 
 #mycarousel {
 
+
   .header-carousel {
     z-index: 999;
     position: relative;
@@ -45,7 +46,8 @@ h6 {
 
   .carousel-caption {
 
-    background-color: rgba(255, 122, 34, 0.4);
+    background-color: rgba(255, 122, 34, 0.6);
+    padding: 10px;
 
     h3 {
       display: inline-block;
@@ -101,6 +103,13 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  @media only screen and (max-width: 768px) {
+    .carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right {
+      top: 30%;
+    }
+  }
+
 }
 
 .wrapper-navigation {
@@ -109,22 +118,18 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid $verdeBase;
+  border-bottom: 1px solid $verdeBase;
+  background-color: rgba(43, 128, 45, 0.24);
 
   ul {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(43, 128, 45, 0.24);
-    border-top: 1px solid $verdeBase;
-    border-bottom: 1px solid $verdeBase;
-    //border: 0;
+    border: 0;
 
     padding: 5px;
-  }
-
-  @media only screen and (max-width: 768px) {
-
   }
 
   li {
@@ -157,6 +162,26 @@ h6 {
         border-color: darken($laranjaBase, 30%);
       }
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    ul {
+      width: 80%;
+    }
+
+    li {
+      a {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 5px;
+      }
+
+      i {
+        margin: 10px;
+      }
+
+    }
+
   }
 }
 

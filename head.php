@@ -15,12 +15,11 @@ require_once 'lib/metodos.php';
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/animate.css">
     <link rel="stylesheet" href="/assets/css/landing-page.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
 
 </head>
 
 <body>
-
 
 <div id="mycarousel" class="carousel slide" data-ride="carousel">
 
@@ -110,7 +109,6 @@ require_once 'lib/metodos.php';
         </li>
     </ul>
 </div>
-
 
 <div class="container">
     <div class="row bg-custom">
