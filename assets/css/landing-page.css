@@ -212,26 +212,27 @@ h6 {
 /* line 225, landing-page.scss */
 .propostas, .agenda {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
-/* line 230, landing-page.scss */
+/* line 231, landing-page.scss */
 .propostas ul li, .agenda ul li {
-  color: #4e4e4e;
+  color: #f2dede;
   margin-top: 10px;
 }
-/* line 237, landing-page.scss */
+/* line 238, landing-page.scss */
 .propostas h2, .agenda h2 {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: #4e4e4e;
 }
-/* line 243, landing-page.scss */
+/* line 244, landing-page.scss */
 .propostas h3, .agenda h3 {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: white;
+  color: #4e4e4e;
 }
 
-/* line 250, landing-page.scss */
+/* line 251, landing-page.scss */
 .footer {
   color: white;
   margin-top: 40px;
@@ -240,7 +241,7 @@ h6 {
   padding-top: 5px;
   bottom: 0;
 }
-/* line 259, landing-page.scss */
+/* line 260, landing-page.scss */
 .footer p {
   margin: 0;
   position: absolute;

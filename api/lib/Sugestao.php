@@ -12,7 +12,7 @@ class PSugestao
         $valores[] = $suge_nome;
         $valores[] = $suge_celular;
         $valores[] = 'API';
-        $valores[] = 'ip_temp';
+        $valores[] = $_SERVER['REMOTE_ADDR'];
         $valores[] = $_SERVER['HTTP_USER_AGENT'];
 
         $sql = " INSERT INTO sugestao 

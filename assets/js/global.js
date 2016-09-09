@@ -28,12 +28,13 @@ $(function () {
     });
 
     $('.carousel-inner .carousel-caption').each(function () {
-        $(this).addClass('animated fadeInLeft hidden')
+        // $(this).addClass('animated fadeInLeft hidden')
+        $(this).addClass('hidden')
     });
 
     $(window).on('resize', function () {
         $wHeight = $(window).height();
-        $item.height($wHeight);
+        $item.height($wHeight - 200);
     });
 
 
@@ -69,25 +70,18 @@ $(function () {
     $(".btn-enviar").click(function (e) {
         e.preventDefault();
 
+        var dados = $("form").serialize();
+
+        $("#resposta").html('Sua sugestão foi enviada com sucesso.');
+        $("#modal_respota").modal();
+
         $.ajax({
             type: 'POST',
             url: 'acoes.php?acao=salvar_sugestao',
             data: {
-                suge_area_id: $("[name='suge_area_id']").val(),
-                suge_descricao: $("[name='suge_descricao']").val(),
-                suge_nome: $("[name='suge_nome']").val(),
-                suge_celular: $("[name='suge_celular']").val()
+                dados: dados
             },
-            success: function (data) {
-                data = JSON.parse(data);
-
-                if (data.conteudo == 'sucesso')
-                    $("#resposta").html('Sua sugestão foi enviada com sucesso.');
-                else
-                    $("#resposta").html('Ocorreu um erro, tente novamente mais tarde.');
-
-                $("#modal_respota").modal();
-            }
+            success: function (data) {}
         })
     });
 

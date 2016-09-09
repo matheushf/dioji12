@@ -8,9 +8,7 @@ $acao = ($_POST['acao']) ? $_POST['acao'] : $_GET['acao'];
 switch ($acao) {
     case 'salvar_sugestao':
 
-        $dados = http_build_query($_POST);
-
-        $res = conectarCurl(null, 'sugestao/salvar', $dados);
+        $res = conectarCurl(null, 'sugestao/salvar', $_POST['dados']);
 
         echo json_encode($res);
 

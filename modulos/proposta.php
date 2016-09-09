@@ -8,49 +8,37 @@ include '../head.php';
         }
     </script>
 
-
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
 
         <div class="propostas text-justify">
             <h2>Plano de Governo Dioji 12</h2>
 
-
             <div class="proposta-item" data-item="0"><h3>Saúde</h3>
                 <ul>
                     <li>
                         Construir o Credeq Municipal para dar auxílio terapêutico e ambulatorial aos dependentes
-                        químicos,
-                        e
-                        suporte
-                        às famílias.
+                        químicos, e suporte às famílias.
                     </li>
                     <li>
                         Criação do Hospital da Mulher e da Criança, com todas as especialidades médicas, como pediatria,
-                        ginecologia,
-                        mastologia, obstetrícia; além de exames preventivos e laboratoriais etc.
+                        ginecologia, mastologia, obstetrícia; além de exames preventivos e laboratoriais etc.
                     </li>
                     <li>
                         Ampliar o número de cadastros do Serviço de Atendimento Domiciliar (SAD) para atender toda a
-                        população
-                        que
-                        necessite de cuidados em casa, diminuindo o fluxo nas Unidades de Saúde.
+                        população que necessite de cuidados em casa, diminuindo o fluxo nas Unidades de Saúde.
                     </li>
                     <li>
                         Levar o Programa Remédio em Casa para 100% dos inhumenses acamados ou impossibilitados de
-                        locomoção,
-                        que
-                        receberão seus remédios em casa.
+                        locomoção, que receberão seus remédios em casa.
                     </li>
                     <li>
                         Construir mais duas Unidades Básicas de Saúde (UBS), a exemplo das unidades Carin Calil e Manoel
-                        Munhoz,
-                        deixando a cidade totalmente coberta e amparada.
+                        Munhoz, deixando a cidade totalmente coberta e amparada.
                     </li>
                     <li>
                         Ampliar o número de atendimentos, de acordo com a demanda, da Equoterapia Goiabeira, em parceria
-                        com o
-                        Sindicato Rural.
+                        com o Sindicato Rural.
                     </li>
 
                 </ul>
@@ -60,74 +48,52 @@ include '../head.php';
                 <ul>
                     <li>
                         Entregar as obras dos dois novos CMEIS (Centros Municipais de Educação Infantil) que já estão em
-                        construção
-                        ainda no primeiro ano de gestão, e construir outros dois CMEIS até o final da gestão, ampliando
-                        em
-                        800 o
-                        número
-                        de vagas na educação infantil.
+                        construção ainda no primeiro ano de gestão, e construir outros dois CMEIS até o final da gestão,
+                        ampliando
+                        em 800 o número de vagas na educação infantil.
                     </li>
                     <li>
                         Entregar as obras da Escola Vovó Lilia no primeiro ano de gestão, ampliando em 500 o número de
-                        vagas
-                        no
-                        Ensino
-                        Fundamental, e construir mais uma unidade de ensino Padrão Século XXI.
+                        vagas no Ensino Fundamental, e construir mais uma unidade de ensino Padrão Século XXI.
                     </li>
                     <li>
                         Adquirir 6 novos ônibus escolares, que se juntarão aos 6 já adquiridos nos últimos três anos,
-                        para
-                        garantir
-                        ainda mais segurança e tranquilidade no transporte para nossas crianças e jovens.
+                        para garantir ainda mais segurança e tranquilidade no transporte para nossas crianças e jovens.
                     </li>
                     <li>
                         Ampliar o número de Bolsas Universitárias aos estudantes do município, contribuindo com a
-                        formação
-                        superior
-                        daqueles que buscam mais qualificação.
+                        formação superior daqueles que buscam mais qualificação.
                     </li>
                     <li>
                         Manter o Programa Uniforme Gratuito de forma que todas nossas crianças e jovens continuem
-                        uniformizados,
-                        identificados e seguros nas unidades escolares.
+                        uniformizados, identificados e seguros nas unidades escolares.
                     </li>
                     <li>
                         Os professores tiveram reajuste salarial de 100% nos últimos três anos, sendo que esta gestão
-                        foi
-                        a
-                        primeira a
-                        cumprir com a Lei do Piso Salarial Nacional. Nossa proposta é continuar lutando pela valorização
-                        destes
-                        profissionais.
+                        foi a primeira a cumprir com a Lei do Piso Salarial Nacional. Nossa proposta é continuar lutando
+                        pela valorização destes profissionais.
                     </li>
                 </ul>
             </div>
+
             <div class="proposta-item" data-item="2"><h3><strong>Segurança</strong></h3>
                 <ul>
                     <li>
                         Criação da Secretaria Municipal de Segurança Pública, que dará suporte às forças de segurança na
-                        cidade,
-                        garantindo retorno mais rápido e eficiente no combate ao crime.
+                        cidade, garantindo retorno mais rápido e eficiente no combate ao crime.
                     </li>
                     <li>
                         Ampliar a Guarda Municipal, garantindo, com maior efetivo, frota e equipamentos, auxílio no
-                        combate à
-                        criminalidade.
+                        combate à criminalidade.
                     </li>
                     <li>
                         Implantar o Projeto Inhumas Mais Segura, que consiste na aquisição de bases móveis da guarda
-                        municipal
-                        nos
-                        bairros. Serão adquiridos microonibus equipados e interligados com as polícias civil e militar,
-                        agindo
-                        de
-                        forma
-                        cooperada no combate à criminalidade.
+                        municipal nos bairros. Serão adquiridos microonibus equipados e interligados com as polícias
+                        civil e militar, agindo de forma cooperada no combate à criminalidade.
                     </li>
                     <li>
                         O Banco de Horas ajudou a aumentar o efetivo da Polícia Militar nas ruas da nossa cidade. O
-                        auxílio da
-                        Prefeitura será ampliado, garantindo mais tranquilidade às nossas famílias.
+                        auxílio da Prefeitura será ampliado, garantindo mais tranquilidade às nossas famílias.
                     </li>
                     <li>
                         O Sistema de Videomonitoramento está sendo instalado. Ele será ampliado e irá cobrir o dobro de
@@ -247,25 +213,19 @@ include '../head.php';
                 <ul>
                     <li>
                         Ampliação da Bolsa Atleta, dando condições para que mais jovens inhumenses possam se amparar e
-                        aprimorar
-                        seus
-                        potenciais esportivos.
+                        aprimorar seus potenciais esportivos.
                     </li>
                     <li>
                         Criação de cursos preparatórios para vestibular, onde os jovens terão aulas gratuitas com
-                        professores
-                        renomados.
+                        professores renomados.
                     </li>
                     <li>
                         Criação do Programa Meu Primeiro Emprego, onde serão realizados convênios com empresas para
-                        empregar
-                        jovens de
-                        16 a 25 anos.
+                        empregar jovens de 16 a 25 anos.
                     </li>
                     <li>
                         Ampliação do Projeto Cidade Digital, com a disponibilização de internet gratuita em todas as
-                        praças de
-                        Inhumas, a exemplo da Vila 31 de Março.
+                        praças de Inhumas, a exemplo da Vila 31 de Março.
                     </li>
                 </ul>
             </div>
