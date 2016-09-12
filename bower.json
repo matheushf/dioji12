@@ -1,7 +1,7 @@
 {
   "name": "dioji12",
   "description": "temp repo for an campaign profile",
-  "main": "index.html",
+  "main": "index.php",
   "authors": [
     "matheushf"
   ],
@@ -23,7 +23,22 @@
   ],
   "dependencies": {
     "jquery": "^3.1.0",
-    "angular": "^1.5.8",
     "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.min.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    }
   }
 }

@@ -12,9 +12,14 @@
     </div>
 </div>-->
 
-<script type="application/javascript" src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+
+<!--<script type="application/javascript" src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
 <script type="application/javascript" src="/assets/js/vendor/jquery.maskedinput.min.js"></script>
-<script type="application/javascript" src="/assets/js/vendor/bootstrap.min.js"></script>
+<script type="application/javascript" src="/assets/js/vendor/bootstrap.min.js"></script>-->
 <script type="application/javascript" src="/assets/js/global.js"></script>
 
 </body>

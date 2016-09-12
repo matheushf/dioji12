@@ -7,17 +7,24 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     refresh = require('gulp-refresh'),
     jshint = require('gulp-jshint'),
-    compass = require('gulp-compass');
+    compass = require('gulp-compass'),
+    wiredep = require('wiredep').stream;
 
 var srcStyles = [
-    'assets/css/**/*.scss'
+    'assets/sass/**/*.scss'
 ];
 var srcJs = [
     '!assets/js/vendor/**/*.js',
     'assets/js/**/*.js'
 ];
+
 var srcPaths = srcStyles.concat(srcJs);
 srcPaths.push('**/*.html');
+
+var srcWiredep = [
+    'head.php',
+    'foot.php'
+];
 
 gulp.task('styles', function () {
     var processors = [
@@ -47,6 +54,12 @@ gulp.task('reload', function () {
         .pipe(refresh())
 });
 
+gulp.task('fonts', function() {
+    return gulp.src([
+            'app/bower_components/font-awesome/fonts/fontawesome-webfont.*'])
+        .pipe(gulp.dest('dist/fonts/'));
+});
+
 gulp.task('watch:styles', function () {
     gulp.watch('**/*.scss', ['styles']);
 });
@@ -58,4 +71,12 @@ gulp.task('watch', function () {
     gulp.watch(srcPaths, function () {
         runSequence('styles', ['reload']);
     });
+});
+
+gulp.task('build', function () {
+    return gulp.src(srcWiredep)
+        .pipe(wiredep({
+            bowerJson: require('./bower.json')
+        }))
+        .pipe(gulp.dest('./'));
 });
