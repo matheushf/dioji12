@@ -56,8 +56,16 @@ gulp.task('reload', function () {
 
 gulp.task('fonts', function() {
     return gulp.src([
-            'app/bower_components/font-awesome/fonts/fontawesome-webfont.*'])
-        .pipe(gulp.dest('dist/fonts/'));
+            'bower_components/font-awesome/fonts/fontawesome-webfont.*'])
+        .pipe(gulp.dest('assets/fonts/'));
+});
+
+gulp.task('bower', function () {
+    return gulp.src(srcWiredep)
+        .pipe(wiredep({
+            bowerJson: require('./bower.json')
+        }))
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('watch:styles', function () {
@@ -74,9 +82,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('build', function () {
-    return gulp.src(srcWiredep)
-        .pipe(wiredep({
-            bowerJson: require('./bower.json')
-        }))
-        .pipe(gulp.dest('./'));
+    runSequence('bower', 'fonts');
 });

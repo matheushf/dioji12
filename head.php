@@ -12,11 +12,8 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <!-- endbower -->
 
-    <!--<link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/animate.css">-->
     <link rel="stylesheet" href="/assets/css/landing-page.css">
-    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 
