@@ -1,6 +1,7 @@
 <?php
 include 'head.php';
 ?>
+
     <script>
         function declararArea() {
             area = document.getElementsByClassName('sugestao-intro');
