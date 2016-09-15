@@ -37,7 +37,7 @@ include 'head.php';
                     <input type="text" class="form-control mask-telefone" name="suge_celular"
                            placeholder="(62) 0000-0000.."/>
                 </div>
-
+                
                 <div class="form-group">
                     <button type="" class="btn btn-enviar">ENVIAR SUGESTÃO</button>
                 </div>
