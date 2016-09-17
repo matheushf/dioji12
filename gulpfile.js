@@ -103,7 +103,7 @@ gulp.task('compress-css', function () {
 });
 
 gulp.task('build', function () {
-    runSequence('bower', 'fonts');
+    runSequence('bower', 'fonts', 'compress-css', 'compress-js');
 });
 
 gulp.task('watch', function () {
