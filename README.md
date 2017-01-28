@@ -1,2 +1,3 @@
-# dioji12
-temp repo for an campaign profile
+Template demo
+<br>
+Gulp, SASS, Compass, CSS3

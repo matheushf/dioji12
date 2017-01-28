@@ -21,9 +21,9 @@
 
 <div id="mycarousel" class="carousel slide" data-ride="carousel">
 
-    <!--<div class="header-carousel animated fadeInLeft">
+    <div class="header-carousel animated fadeInLeft">
         <img src="/assets/imagens/logo.png" class="img-responsive">
-    </div>-->
+    </div>
 
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -44,7 +44,7 @@
                 <!--<h3>Primeira imagem</h3>-->
                 <p>Impositio de raptus rumor, tractare armarium! Impositio de raptus rumor, tractare armarium! Impositio
                     de raptus rumor, tractare armarium! Impositio de raptus rumor, tractare armarium! </p>
-            </div>
+'            </div>
 
         </div>
 
